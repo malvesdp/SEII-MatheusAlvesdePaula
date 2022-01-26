@@ -1,0 +1,10 @@
+1) qual o limite de bytes a serem enviados por pacotes TCP e UDP; 
+O limite de bytes a serem enviados por pacotes TCP é de 1500 bytes devido ao tamanho máximo de um frame Ethernet, mas o protocolo responsável permite o uso de pacotes com até 64 kbytes, assim pacotes maiores que 1500 bytes são transmitidos em partes de até 1500 bytes. Já o limite de bytes a serem enviados por pacotes UDO é de 512 bytes.
+
+
+2) como um arquivo grande pode ser transmitido via internet; 
+A transmissão é realizada através da divisão do arquivo grande em pacotes de menor tamanho, por tal motivo é possível que ao baixar algum arquivo de mídia grande e durante a execução algum parte estar "defeituosa", por exemplo, um trecho sem som ou sem imagem, isso acontece porque o pacote responsável por esse trecho não foi transmitido até o seu destino.
+
+
+3) Qual a diferença entre as implementações TCP e UDP para esse problema.
+A diferença é que o TCP garante a transmissão segura do arquivo, já o UDP não, preocupando mais com a velocidade de envio.
