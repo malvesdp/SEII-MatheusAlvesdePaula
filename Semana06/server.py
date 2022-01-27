@@ -1,11 +1,11 @@
-import socket
-import threading
-import time
+import socket # importa a biblioteca socket
+import threading # importa a biblioteca threading
+import time # # importa a biblioteca time
 
-SERVER_IP = socket.gethostbyname(socket.gethostname())
-PORT = 5050
-ADDR = (SERVER_IP, PORT)
-FORMATO = 'utf-8'
+SERVER_IP = socket.gethostbyname(socket.gethostname()) # ip do servidor
+PORT = 5050 # porta
+ADDR = (SERVER_IP, PORT) #
+FORMATO = 'utf-8' # formato
 
 server = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 server.bind(ADDR)

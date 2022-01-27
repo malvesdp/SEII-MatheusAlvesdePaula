@@ -1,14 +1,14 @@
-import socket
-import threading
-import time
+import socket # importa a biblioteca socket
+import threading # importa a biblioteca threading
+import time # importa a biblioteca time
 
-PORT = 5050
-FORMATO = 'utf-8'
-SERVER = "192.168.0.109"
-ADDR = (SERVER, PORT)
+PORT = 5050 # porta
+FORMATO = 'utf-8' # formato
+SERVER = "192.168.0.109" # ip do servidor
+ADDR = (SERVER, PORT) #
 
-client = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-client.connect(ADDR)
+client = socket.socket(socket.AF_INET, socket.SOCK_STREAM) #
+client.connect(ADDR) #
 
 def handle_mensagens():
     while(True):

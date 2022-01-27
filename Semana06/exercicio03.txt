@@ -7,4 +7,4 @@ A transmissão é realizada através da divisão do arquivo grande em pacotes de
 
 
 3) Qual a diferença entre as implementações TCP e UDP para esse problema.
-A diferença é que o TCP garante a transmissão segura do arquivo, já o UDP não, preocupando mais com a velocidade de envio.
+A diferença é que o TCP garante a transmissão segura do arquivo, sendo que quando um dos pacotes não é transmitido, o protocolo TCP fará o reenvio do mesmo para garantir a entrega de todos os pacotes. Já no UDP, não existe a garantia de entregar todos os pacotes, preocupando mais com a velocidade de envio.
